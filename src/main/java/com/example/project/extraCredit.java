@@ -1,6 +1,5 @@
 package com.example.project;
 
-
 public class extraCredit {
     //WRITE YOUR PROGRAM IN calculateTip
     public static String calculateTip(int people, int percent, double cost) { //You must use these  variable in your calculations
@@ -23,8 +22,8 @@ public class extraCredit {
         double tipPerPerson = tip / people;
         tipPerPerson = Math.round(tipPerPerson * 100);
         tipPerPerson /= 100;
-        result.append("Tip per person: $" + tipPerPerson + "\n");
-        double totalPerPerson = (cost * (percent / 100.0) + cost) / people;
+        result.append("Tip per person: " + tipPerPerson + "\n");
+        double totalPerPerson = (tip + cost) / people;
         totalPerPerson = Math.round(totalPerPerson * 100);
         totalPerPerson /= 100;
         result.append("Total cost per person: $" + totalPerPerson + "\n");
@@ -36,22 +35,9 @@ public class extraCredit {
      //TEST YOUR PROGRAM IN main
      public static void main(String[] args) {
         //try different values for people, percent, and cost to test your program before running test cases
-        Scanner scan = new Scanner(System.in);
-        System.out.print("Enter any letter besides ‘x’ ");
-        String character = “a”;
-
-         while (** figure out a way to compare character to another string) {
-        System.out.print("Thanks for not entering ‘x’ ");
-        character = scan.nextInt();
-    }
-
-    // code below the while loop runs after the loop ends
-        System.out.print("You entered ‘-1’ :( ");
-
-        int people = 12; 
-        int percent = 15;
-        double cost = 566.7;              
+        int people = 6; 
+        int percent = 25;
+        double cost = 52.27;              
         System.out.println(calculateTip(people,percent,cost));
     }
 }
-        
