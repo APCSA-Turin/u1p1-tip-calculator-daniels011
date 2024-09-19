@@ -1,7 +1,6 @@
 package com.example.project;
-
-
-public class extraCredit {
+// I learned how to round from here: https://stackoverflow.com/questions/13210491/math-round-java
+public class TipCalculator {
     //WRITE YOUR PROGRAM IN calculateTip
     public static String calculateTip(int people, int percent, double cost) { //You must use these  variable in your calculations
         //DO NOT DELETE ANY OF THE CODE BELOW      
@@ -35,18 +34,7 @@ public class extraCredit {
     }
      //TEST YOUR PROGRAM IN main
      public static void main(String[] args) {
-        //try different values for people, percent, and cost to test your program before running test cases
-        Scanner scan = new Scanner(System.in);
-        System.out.print("Enter any letter besides ‘x’ ");
-        String character = “a”;
-
-         while (** figure out a way to compare character to another string) {
-        System.out.print("Thanks for not entering ‘x’ ");
-        character = scan.nextInt();
-    }
-
-    // code below the while loop runs after the loop ends
-        System.out.print("You entered ‘-1’ :( ");
+    //try different values for people, percent, and cost to test your program before running test cases
 
         int people = 12; 
         int percent = 15;
